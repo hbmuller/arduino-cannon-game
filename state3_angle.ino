@@ -8,7 +8,8 @@ void state3()
   delay(50);
 
   // Check trigger before next run of the loop
-  if (analogRead(TRIGGER_PIN) == HIGH)
+  
+  if (digitalRead(TRIGGER_PIN) == HIGH)
   {
     // Save angle and go to "adjust power" phase
     p_angle = ang;

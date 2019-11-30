@@ -15,7 +15,7 @@ byte game_state = 0;
 const byte TRIGGER_PIN = 2;
 
 // Pot pin (analog)
-const byte POT_PIN = 2;
+const byte POT_PIN = 3;
 
 // Sound pin
 const byte SOUND_PIN = 4;
