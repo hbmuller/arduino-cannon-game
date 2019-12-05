@@ -7,10 +7,6 @@ void flicker()
     display.fillRect(0, 0, S_RIGHT, S_BOTTOM, 2);
     display.display();
 
-    tone(SOUND_PIN, 100, 10);
-
     delay(50);
   }
-
-  noTone(SOUND_PIN);
 }

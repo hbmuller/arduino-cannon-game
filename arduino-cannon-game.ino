@@ -8,17 +8,14 @@
  * ###################
 */
 
-// Game phase control
+// Game state control
 byte game_state = 0;
 
-// Push switch values
+// Switch pin (digital)
 const byte TRIGGER_PIN = 2;
 
 // Pot pin (analog)
 const byte POT_PIN = 3;
-
-// Sound pin
-const byte SOUND_PIN = 4;
 
 // Diplay
 Adafruit_SSD1306 display;

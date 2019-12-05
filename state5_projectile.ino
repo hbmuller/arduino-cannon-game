@@ -7,10 +7,6 @@ void state5()
   p_position[0] += p_momentum[0];
   p_position[1] += p_momentum[1];
 
-  // Whistle sound
-  int pitchBend = (int)max(0, p_momentum[1] * 800);
-  tone(SOUND_PIN, 1000 - pitchBend, 5);
-
   // Get ground Y for current X
   float surface = getSurface(p_position[0]);
 
@@ -34,7 +30,6 @@ void state5()
     // No hit. Set marker and back to cannon
     p_marker = int(p_position[0]);
     display.clearDisplay();
-    noTone(SOUND_PIN);
     drawWall();
     game_state = 3;
   }
