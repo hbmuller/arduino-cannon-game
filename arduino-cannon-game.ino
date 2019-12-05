@@ -29,8 +29,8 @@ float t_init;
 float t_step;
 byte t_height;
 byte t_base;
-float t_top_player;
-float t_top_enemy;
+float t_top_player0;
+float t_top_player1;
 
 // Projectile constants
 const float P_GRAVITY = 0.035;

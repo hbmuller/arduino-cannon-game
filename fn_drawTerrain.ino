@@ -6,9 +6,9 @@ void drawTerrain()
     display.drawLine(i, int(getSurface(i)), i, S_BOTTOM, 1);
   }
 
-  // Player
+  // Player 0
   drawCastle(15);
 
-  // Enemy
+  // Player 1
   drawCastle(105);
 }

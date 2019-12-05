@@ -19,18 +19,17 @@ void state4()
     // Save power adjustment
     p_power = power;
 
-    // Calculate projectile momentum
-    float power_final = P_POWER_AMP * p_power + P_POWER_MIN;
-    p_momentum[0] = cos(p_angle) * power_final;
-    p_momentum[1] = sin(p_angle) * power_final;
+    // Set projectile momentum
+    setMomentum(p_angle, p_power);
 
     // Set projectile position
     p_position[0] = 19;
-    p_position[1] = getSurface(15) - 10;
+    p_position[1] = t_top_player0 - 2;
 
     // Draw terrain
     display.clearDisplay();
     drawTerrain();
+    drawWind();
     display.drawBitmap(p_marker - 4, int(getSurface(p_marker)) - 8, B_MARKER, 8, 8, 1);
     display.display();
 

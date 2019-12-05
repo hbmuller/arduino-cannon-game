@@ -12,7 +12,7 @@ void createTerrain()
   p_power = -1;
   p_marker = 255;
 
-  // Player and enemy hitbox Y
-  t_top_player = getSurface(15) - 8;
-  t_top_enemy = getSurface(105) - 8;
+  // Players hitbox Y
+  t_top_player0 = getSurface(15) - 8;
+  t_top_player1 = getSurface(105) - 8;
 }
