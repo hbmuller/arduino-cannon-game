@@ -14,12 +14,14 @@ void state3()
   // Update and draw wind on first loop of the state
   if (refreshedWind == false)
   {
-    p_wind = random(-3, 3);
+    int wind = random(-3, 3);
+
+    p_wind = wind / 100;
     refreshedWind = true;
 
-    for (int i = abs(p_wind); i > 0; i--)
+    for (int i = abs(wind); i > 0; i--)
     {
-      display.drawBitmap(S_RIGHT - 2 - i * 8, 2, p_wind < 0 ? B_CARET_L : B_CARET_R, 8, 8, 1);
+      display.drawBitmap(S_RIGHT - 2 - i * 8, 2, wind < 0 ? B_CARET_L : B_CARET_R, 8, 8, 1);
     }
   }
 

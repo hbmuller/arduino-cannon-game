@@ -34,13 +34,13 @@ float t_top_enemy;
 
 // Projectile constants
 const float P_GRAVITY = 0.035;
-const float P_POWER_MIN = 0.25;
-const float P_POWER_AMP = 1.755;
+const float P_POWER_MIN = 0.35;
+const float P_POWER_AMP = 1.85;
 
 // Projectile vars
 float p_angle;
 float p_power;
-int p_wind;
+float p_wind;
 byte p_marker; // Last hit X position
 float p_momentum[2] = {0, 0};
 float p_position[2] = {0, 0};
