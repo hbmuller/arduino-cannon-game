@@ -4,7 +4,7 @@ bool player1Turn = false;
 void state5()
 {
   // Apply wind and gravity and simulate position
-  p_momentum[0] += p_wind / 100;
+  p_momentum[0] += p_wind / 200;
   p_momentum[1] += P_GRAVITY;
   p_position[0] += p_momentum[0];
   p_position[1] += p_momentum[1];
@@ -30,6 +30,7 @@ void state5()
   else if (p_position[1] >= surface && player1Turn == false)
   {
     // No hit for player0. Set marker and prepare for player1.
+    player1Turn = true;
     p_marker = int(p_position[0]);
     display.clearDisplay();
     drawTerrain();
@@ -38,8 +39,8 @@ void state5()
     // Random player1 shot
     p_position[0] = 105;
     p_position[1] = t_top_player1 - 2;
-    float randomAngle = random(0, 100) / 250 * PI - PI;
-    float randomPower = random(0, 100) / 100;
+    float randomAngle = float(random(-90, -60)) / 100 * PI;
+    float randomPower = 0.5 + float(random(0, 100)) / 100;
     setMomentum(randomAngle, randomPower);
 
     delay(1000);
