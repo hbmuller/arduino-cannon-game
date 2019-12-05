@@ -1,7 +1,8 @@
 // Projectile: simulate Projectile and do hittesting
 void state5()
 {
-  // Apply gravity and simulate position
+  // Apply wind and gravity and simulate position
+  p_momentum[0] += p_wind / 50;
   p_momentum[1] += P_GRAVITY;
   p_position[0] += p_momentum[0];
   p_position[1] += p_momentum[1];

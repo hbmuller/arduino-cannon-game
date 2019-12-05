@@ -2,8 +2,8 @@
 void drawWall()
 {
   // Bottom bricks
-  display.drawLine(0, C_FLOOR, 127, C_FLOOR, 1);
-  for (int i = 15; i < 128; i += 16)
+  display.drawLine(0, C_FLOOR, S_RIGHT, C_FLOOR, 1);
+  for (int i = 15; i <= S_RIGHT; i += 16)
   {
     display.drawLine(i, C_FLOOR, i, S_BOTTOM, 1);
   }
