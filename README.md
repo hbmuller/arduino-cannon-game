@@ -2,7 +2,8 @@
 
 A small game made with Arduino and a tiny I2C display
 
-![](https://i.imgur.com/QSWL7rN.jpg)
+<img src="https://imgur.com/cXnjCQl.jpg" alt="Game prototype" width="45%" />
+<img src="https://imgur.com/swyzJpl.jpg" alt="Finished game inside case" width="45%" />
 
 A bit more info into it:
 
